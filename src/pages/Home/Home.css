@@ -1,3 +1,7 @@
+.hero{
+    position: relative;
+}
+
 .banner_img{
     width: 100%;
     background: linear-gradient(from right, transparent, black 75%); 
@@ -11,6 +15,9 @@
 }
 
 .hero-caption{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     padding-left: 6%;
 }
 
@@ -28,6 +35,16 @@
 
 .hero_btns button{
     padding: 10px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    border: 0px;
+    outline: 0px;
+    font-size: 15px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border-radius: 4px;
 }
 
 .hero_btns button.dark-btn{
@@ -41,4 +58,8 @@
 
 .hero_btns button.dark-btn:hover{
     background: #6d6d6d66;
+}
+
+.more-cards{
+    padding-left: 6%;
 }

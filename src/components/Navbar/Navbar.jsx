@@ -6,10 +6,10 @@ import { Search, Bell, User, ChevronUp  } from 'lucide-react'
 
 const Navbar = () => {
     return (
-        <div className='navbar w-full flex justify-between fixed text-[#e5e5e5]'>
-            <div className="navbar-left flex items-center">
-                <img src={logo} className='w-30' />
-                <ul className='flex list-none gap-5'>
+        <div className='navbar'>
+            <div className="navbar-left">
+                <img src={logo} />
+                <ul>
                     <li>Home</li>
                     <li>TV Shows</li>
                     <li>Movies</li>
@@ -18,15 +18,15 @@ const Navbar = () => {
                     <li>Browser by Languages</li>
                 </ul>
             </div>
-            <div className="navbar-right flex gap-4 items-center">
-                <Search size={20} className='cursor-pointer' />
+            <div className="navbar-right">
+                <Search size={20} className='search' />
                 <p>Children</p>
                 <Bell />
-                <div className='navbar_profile flex items-center gap-2 cursor-pointer relative'>
-                    <img src={profile} className='rounded-lg w-10' />
+                <div className='navbar_profile'>
+                    <img src={profile} className='profile' />
                     <ChevronUp />
-                    <div className="dropdown absolute top-full right-0 underline w-max hidden">
-                        <p className='cursor-pointer'>Sign out of Netflix</p>
+                    <div className="dropdown">
+                        <p>Sign out of Netflix</p>
                     </div>
                 </div>
             </div>
