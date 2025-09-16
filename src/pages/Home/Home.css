@@ -4,8 +4,7 @@
 
 .banner_img{
     width: 100%;
-    background: linear-gradient(from right, transparent, black 75%); 
-    background: linear-gradient(to right, transparent, black 75%); 
+    mask-image: linear-gradient(to right, transparent, black 30%);
 }
 
 .caption-img{
