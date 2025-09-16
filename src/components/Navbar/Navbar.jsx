@@ -1,12 +1,25 @@
-import React from 'react'
+import { useEffect, useRef } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 import profile from '../../assets/profile_icon.png'
 import { Search, Bell, User, ChevronUp  } from 'lucide-react'
 
 const Navbar = () => {
+
+    const navbar = useRef()
+
+    useEffect(()=>{
+        window.addEventListener('scroll', ()=>{
+            if(window.scrollY > 75){
+                navbar.current.classList.add('dark-navbar')
+            }else{
+                navbar.current.classList.remove('dark-navbar')
+            }
+        })
+    }, [])
+    
     return (
-        <div className='navbar'>
+        <div ref={navbar} className='navbar'>
             <div className="navbar-left">
                 <img src={logo} />
                 <ul>

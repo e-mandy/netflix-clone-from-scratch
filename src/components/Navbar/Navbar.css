@@ -78,3 +78,7 @@
 .navbar .navbar_profile:hover .dropdown{
     display: block;
 }
+
+.navbar.dark-navbar{
+    background: linear-gradient(to top, white, #141414 10%);
+}
