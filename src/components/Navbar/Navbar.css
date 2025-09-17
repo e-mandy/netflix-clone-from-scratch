@@ -73,6 +73,7 @@
 .navbar .dropdown p{
     font-size: 13px;
     cursor: pointer;
+    margin: 20px 0px;
 }
 
 .navbar .navbar_profile:hover .dropdown{
@@ -80,5 +81,5 @@
 }
 
 .navbar.dark-navbar{
-    background: linear-gradient(to top, white, #141414 10%);
+    background: #141414;
 }

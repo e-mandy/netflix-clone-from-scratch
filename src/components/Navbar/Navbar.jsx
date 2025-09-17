@@ -3,6 +3,7 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 import profile from '../../assets/profile_icon.png'
 import { Search, Bell, User, ChevronUp  } from 'lucide-react'
+import { logout } from '../../firebase'
 
 const Navbar = () => {
 
@@ -39,7 +40,7 @@ const Navbar = () => {
                     <img src={profile} className='profile' />
                     <ChevronUp />
                     <div className="dropdown">
-                        <p>Sign out of Netflix</p>
+                        <p onClick={logout}>Sign out of Netflix</p>
                     </div>
                 </div>
             </div>
